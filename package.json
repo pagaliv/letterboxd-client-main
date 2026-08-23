@@ -1,0 +1,47 @@
+{
+  "name": "letterboxd-client",
+  "version": "1.0.1",
+  "description": "An unofficial Letterboxd API client.",
+  "license": "MIT",
+  "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [],
+  "keywords": [
+    "letterboxd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erunion/letterboxd-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erunion/letterboxd-client/issues"
+  },
+  "homepage": "https://github.com/erunion/letterboxd-client#readme",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --check --write . && biome check --write",
+    "lint": "npm run lint:types && npm run lint:js && npm run prettier",
+    "lint:js": "biome check",
+    "lint:types": "tsc --noEmit",
+    "prebuild": "rm -rf dist/",
+    "prepack": "npm run build",
+    "pretest": "npm run lint",
+    "prettier": "prettier --check .",
+    "test": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.7",
+    "@readme/standards": "^2.4.0",
+    "@types/node": "^24.10.1",
+    "@vitest/coverage-v8": "^4.0.13",
+    "fetch-mock": "^9.11.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "vitest": "^4.0.13"
+  },
+  "prettier": "@readme/standards/prettier"
+}
