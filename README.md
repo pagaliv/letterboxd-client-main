@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://imgs.search.brave.com/hinuQFThnf8rAUiC1rwGhqwnkBECiLl7NdL7mOQ72cw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/ZGVlcHNlZWsuc3Zn" alt="letterboxd logo" width="500" />
+  <img src="https://user-images.githubusercontent.com/33762/190890947-fae23b13-1149-4572-a967-46575b2031c0.png" alt="letterboxd logo" width="500" />
 </p>
+
 
 <p align="center">
   An unofficial <a href="https://letterboxd.com">Letterboxd</a> API client. 📽️
